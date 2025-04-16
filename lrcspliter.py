@@ -6,13 +6,13 @@ def readfile(pos,end):
     for i,item in enumerate(filelist):
         if filelist[i].endswith(end) == True:
             relist.append(filelist[i])
-        return list
-    print(relist)
-readfile(,".lrc")
+    return relist
+    # print(relist)
+lrcfilelist=readfile("file",".lrc")
 print("准备运行")
 os.system("pause")
 pattern=r'(?<=\S)\s\s(?=\S)'
-readfile()
+# readfile()
 for i,item in enumerate(lrcfilelist):
     lrcfilelist[i]="file/"+lrcfilelist[i]
 for lrcfile in lrcfilelist:
